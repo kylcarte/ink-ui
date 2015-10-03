@@ -1,0 +1,36 @@
+name: ink-ui
+version: 0.1.0.0
+cabal-version: >=1.10
+build-type: Simple
+license: BSD3
+license-file: LICENSE
+maintainer: kylcarte@gmail.com
+author: Kyle Carter
+
+library
+    exposed-modules:
+        Ink.UI
+        Lucid.Ink
+        Lucid.Ink.Internal
+    build-depends:
+        base >=4.8 && <4.9,
+        lucid -any,
+        lens -any,
+        text -any,
+        scotty -any,
+        wai-middleware-static -any,
+        wai-extra -any
+    default-language: Haskell2010
+    hs-source-dirs: src
+
+-- executable ink-site
+--     main-is: Ink/Build.hs
+--     build-depends:
+--         base >=4.8 && <4.9,
+--         lucid -any,
+--         lens -any,
+--         text -any,
+--         ink-ui -any
+--     default-language: Haskell2010
+--     hs-source-dirs: src
+
